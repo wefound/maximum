@@ -170,8 +170,7 @@ header ul a strong {
 }
 
 section {
-  width:500px;
-  float:right;
+  padding-left: 320px
   padding-bottom:50px;
 }
 
@@ -268,3 +267,4 @@ footer {
     color:#444;
   }
 }
+
