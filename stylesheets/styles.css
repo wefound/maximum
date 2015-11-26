@@ -1,14 +1,14 @@
-@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700italic,700);
-
 body {
-  background-color: #fff;
-  padding:50px;
-  font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#727272;
+  background: #fff;
+  padding:0;
+  margin:0;
+  font: 14px/1.5 "Source Sans Pro", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight:400;
+  -webkit-font-smoothing:antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
   color:#222;
   margin:0 0 20px;
 }
@@ -22,7 +22,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size:28px;
+  /*font-size:28px;*/
 }
 
 h2 {
@@ -43,7 +43,7 @@ a:hover {
 }
 
 a small {
-  font-size:11px;
+  /*font-size:11px;*/
   color:#777;
   margin-top:-0.3em;
   display:block;
@@ -54,7 +54,8 @@ a:hover small {
 }
 
 .wrapper {
-  margin:0 auto;
+  margin:2em;
+  overflow: hidden;
 }
 
 blockquote {
@@ -105,7 +106,7 @@ img {
 header {
   width:270px;
   float:left;
-  position:fixed;
+  /*position:fixed;*/
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
@@ -185,18 +186,18 @@ hr {
 }
 
 footer {
-  width:270px;
-  float:left;
-  position:fixed;
-  bottom:50px;
-  -webkit-font-smoothing:subpixel-antialiased;
+    border-top: 1px solid #ddd;
+    bottom: 50px;
+    padding: 20px;
+    background: #efefef;
 }
+footer p{margin-bottom: 10px;}
 
 @media print, screen and (max-width: 960px) {
 
   div.wrapper {
     width:auto;
-    margin:0;
+    margin:1em;
   }
 
   header, section, footer {
@@ -247,8 +248,10 @@ footer {
 
 @media print, screen and (max-width: 480px) {
   body {
-    padding:15px;
+    /*padding:15px;*/
   }
+
+  .wrapper{margin:2em;}
 
   header ul {
     width:99%;
@@ -266,4 +269,3 @@ footer {
     color:#444;
   }
 }
-
